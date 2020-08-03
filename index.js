@@ -36,6 +36,34 @@ client.on('message', (message) => {
     return message.reply('머리부터 발끝 까지!');
   }
 
+  if(message.content == '야') {
+    return message.reply('누가 반말해 너 인성 문제 있어?');
+  }
+
+  if(message.content == '하') {
+    return message.reply('너 양치 안했어? 말하지마 입냄새나니까');
+  }
+  
+  if(message.content == '아니요') {
+    return message.reply('누가 말대꾸 하래?');
+  }
+  
+  if(message.content == 'ㅋ') {
+    return message.reply('웃지마!');
+  }
+  
+  if(message.content == '혼자') {
+    return message.reply('넌 이기적이야 넌 독신주의야');
+  }
+  
+  if(message.content == '싫어요') {
+    return message.reply('싫어?');
+  }
+  
+  if(message.content == '알겠습니다') {
+    return message.reply('누가 알겠습니다로 대답해 모든 대답은 악으로 끝난다!');
+  }
+
   if(message.content == '상태확인') {
     let img = 'https://cdn.discordapp.com/attachments/739384252592029712/739459154892161104/unnamed.jpg';
     let embed = new Discord.RichEmbed()
