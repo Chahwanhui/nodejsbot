@@ -86,8 +86,8 @@ client.on('message', (message) => {
       .setFooter('환희가 만듬', img)
     
           message.channel.send(embed)
-  } else if(message.content == 'help') {
-    let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
+  } else if(message.content == '도움') {
+    let helpImg = 'https://cdn.discordapp.com/attachments/739813178396901416/739819827878953031/1.jpg';
     let commandList = [
       {name: '입수', desc: '머리부터 발끝 까지!'},
       {name: '야', desc: '누가 반말해 너 인성 문제 있어?'},
