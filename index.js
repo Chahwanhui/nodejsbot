@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.argv.length == 2 ? process.env.token : "";
-const welcomeChannelName = "안녕하세요";
-const byeChannelName = "안녕히가세요";
+const welcomeChannelName = "안녕하살법";
+const byeChannelName = "안녕하살법받아치기";
 const welcomeChannelComment = "어서오세요.";
-const byeChannelComment = "안녕히가세요.";
+const byeChannelComment = "님이 퇴교 하셨습니다.";
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -18,7 +18,7 @@ client.on("guildMemberAdd", (member) => {
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
 
-  member.addRole(guild.roles.find(role => role.name == "일반인...?"));
+  member.addRole(guild.roles.find(role => role.name == "일반인ㅋ"));
 });
 
 client.on("guildMemberRemove", (member) => {
@@ -111,10 +111,10 @@ client.on('message', (message) => {
     message.channel.send(embed)
   }
 
-  if(message.content.startsWith('!전체공지')) {
+  if(message.content.startsWith('!공지')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
-      let contents = message.content.slice('!전체공지'.length);
+      let contents = message.content.slice('!공지'.length);
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
         x.user.send(`<@${message.author.id}> ${contents}`);
