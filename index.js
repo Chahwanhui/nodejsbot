@@ -89,17 +89,21 @@ client.on('message', (message) => {
   } else if(message.content == 'help') {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
     let commandList = [
-      {name: 'ping', desc: '현재 핑 상태'},
-      {name: 'embed', desc: 'embed 예제1'},
-      {name: 'embed2', desc: 'embed 예제2 (help)'},
-      {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
-      {name: '!청소', desc: '텍스트 지움'},
+      {name: '입수', desc: '머리부터 발끝 까지!'},
+      {name: '야', desc: '누가 반말해 너 인성 문제 있어?'},
+      {name: '하', desc: '너 양치 안했어? 말하지마 입냄새나니까'},
+      {name: '아니요', desc: '누가 말대꾸 하래?'},
+      {name: 'ㅋㅋㅋ', desc: '웃지마!'},
+      {name: '혼자 게임해야지', desc: '넌 이기적이야 넌 독신주의야'},
+      {name: '싫어요', desc: '싫어?'},
+      {name: '네', desc: '누가 네로 대답해 모든 대답은 악으로 끝난다!'},      
+      {name: '알겠습니다', desc: '누가 알겠습니다로 대답해 모든 대답은 악으로 끝난다!'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('Help of 콜라곰 BOT', helpImg)
+      .setAuthor('Help of 인성 BOT', helpImg)
       .setColor('#186de6')
-      .setFooter(`콜라곰 BOT ❤️`)
+      .setFooter(`인성봇 ❤️`)
       .setTimestamp()
     
     commandList.forEach(x => {
