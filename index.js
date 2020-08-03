@@ -32,8 +32,8 @@ client.on("guildMemberRemove", (member) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content == 'ping') {
-    return message.reply('pong');
+  if(message.content == '입수') {
+    return message.reply('머리부터 발끝 까지!');
   }
 
   if(message.content == '상태확인') {
