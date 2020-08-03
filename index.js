@@ -84,26 +84,6 @@ client.on('message', (message) => {
       .addBlankField()
       .setTimestamp()
       .setFooter('환희가 만듬', img)
-
-  if(message.content == '소개') {
-        let img = 'https://cdn.discordapp.com/attachments/739384252592029712/739459154892161104/unnamed.jpg';
-        let embed = new Discord.RichEmbed()
-          .setTitle('인성봇 소개')
-          .setURL('https://cdn.discordapp.com/attachments/739384252592029712/739459154892161104/unnamed.jpg')
-          .setAuthor('인성봇', img, 'https://cdn.discordapp.com/attachments/739384252592029712/739459154892161104/unnamed.jpg')
-          .setThumbnail(img)
-          .addBlankField()
-          .addField('네', '누가 네로 대답해 모든 대답은 악으로 끝난다!')
-          .addField('입수', '머리부터 발끝 까지!', true)
-          .addField('하', '너 양치 안했어? 말하지마 입냄새나니까', true)
-          .addField('아니요', '누가 말대꾸 하래?', true)
-          .addField('ㅋㅋㅋ', '웃지마')
-          .addField('혼자 게임해야지','넌 이기적이야 넌 독신주의야')
-          .addField('알겠습니다','누가 알겠습니다로 대답해 모든 대답은 악으로 끝난다!')    
-          .addField('싫어요','싫어?')
-          .addBlankField()
-          .setTimestamp()
-          .setFooter('환희가 만듬', img)
     
           message.channel.send(embed)
   } else if(message.content == 'help') {
