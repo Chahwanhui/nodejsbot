@@ -48,7 +48,7 @@ client.on('message', (message) => {
       .addField('연결속도', '보통', true)
       .addField('인성', '매우 나쁨', true)
       .addField('시간', '기능 없음', true)
-      .addField('날씨', 'shorturl.at/owLRZ')
+      .addField('날씨', 'https://www.shorturl.at/owLRZ')
       .addBlankField()
       .setTimestamp()
       .setFooter('환희가 만듬', img)
