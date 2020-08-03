@@ -48,11 +48,11 @@ client.on('message', (message) => {
     return message.reply('누가 말대꾸 하래?');
   }
   
-  if(message.content == 'ㅋ') {
+  if(message.content == 'ㅋㅋㅋ') {
     return message.reply('웃지마!');
   }
   
-  if(message.content == '혼자') {
+  if(message.content == '혼자 게임해야지') {
     return message.reply('넌 이기적이야 넌 독신주의야');
   }
   
@@ -62,6 +62,10 @@ client.on('message', (message) => {
   
   if(message.content == '알겠습니다') {
     return message.reply('누가 알겠습니다로 대답해 모든 대답은 악으로 끝난다!');
+  }
+
+  if(message.content == '네') {
+    return message.reply('누가 네로 대답해 모든 대답은 악으로 끝난다!');
   }
 
   if(message.content == '상태확인') {
