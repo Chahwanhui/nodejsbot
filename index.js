@@ -32,7 +32,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content == '야') {
-    return message.reply('누가 반만 하레 너 인성문제 있어?');
+    return message.reply('누가 반말 하레 너 인성문제 있어?');
   }
 
   if(message.content == '상태확인') {
